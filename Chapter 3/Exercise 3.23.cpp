@@ -18,4 +18,4 @@ int main()
 	return 0;
 }
 
-//vector<int>::iterator can be replaced by auto in the c++11 new std.
+//vector<int>::iterator @ line 11 can be replaced by auto in the c++11 new std.
