@@ -5,6 +5,8 @@ using std::cout;
 using std::endl;
 using std::vector;
 
+//vector<int>::iterator at line 14 and 19 can be replaced buy auto in c++11 new standard.
+
 int main()
 {
 	vector<int> numbers{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };		//Declaring and intializing a vector
