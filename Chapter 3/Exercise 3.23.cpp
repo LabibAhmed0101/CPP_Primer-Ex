@@ -17,3 +17,5 @@ int main()
 	cout << endl;	
 	return 0;
 }
+
+//vector<int>::iterator can be replaced by auto in the c++11 new std.
