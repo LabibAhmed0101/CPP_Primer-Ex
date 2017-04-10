@@ -6,7 +6,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
-#include<cctype>		//Included to use toupper function
+#include<cctype>		//Included to use toupper function 
 
 using std::cin;
 using std::cout;
