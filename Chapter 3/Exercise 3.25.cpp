@@ -29,7 +29,8 @@ int main()
 			cout << "Please enter a valid grade (0~100)" << endl;
 		}
 	}
-
+	
+	//sending the cluster to the standard output
 	cout << "\nThe grade clustering :" << endl;
 	for (vector<int>::const_iterator iter = clusterOfGrades.begin(); iter != clusterOfGrades.end(); ++iter)
 	{
