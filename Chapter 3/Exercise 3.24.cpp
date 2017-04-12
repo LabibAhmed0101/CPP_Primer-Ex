@@ -1,3 +1,6 @@
+/*Exercise 3.24: 
+Redo the last exercise from § 3.3.3 (p. 105) using iterators.*/
+
 #include<iostream>
 #include<vector>
 
@@ -21,7 +24,7 @@ int main()
 	if (numbers.begin() < numbers.end())	//To be sure that the vector isn't empty
 	{
 		cout << "The sum of each pair of adjacent elements" << endl;
-		//sum of each pair till the the second tolast
+		//Sum of each pair till the the second tolast
 		//Last element cant be included because no other element after it to be added to
 		for (vector<int>::const_iterator iter = numbers.begin(); iter != numbers.end() - 1; ++iter)
 		{
@@ -51,3 +54,5 @@ int main()
 	
 	return 0;
 }
+
+//vector<int>::const_iterator can be replaced by auto in the c++11 standard
