@@ -1,5 +1,5 @@
-Exercise 3.26: In the binary search program on page 112, why did we write mid = beg + (end - beg) / 2; 
-instead of mid = (beg + end)/2; ?
+Exercise 3.26: 
+In the binary search program on page 112, why did we write mid = beg + (end - beg) / 2; instead of mid = (beg + end)/2; ?
 
 mid = beg + (end - beg) /2
 is the right one to use becuase by using difference  between two iterators it gives us the distance between them.
