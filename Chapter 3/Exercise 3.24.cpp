@@ -40,7 +40,7 @@ int main()
 			if (iter < numbers.end() - i)	//if vector size is even
 			{
 				cout << *iter + *(numbers.end() - i) << " ";
-				i++;
+				++i;	//(numbers.end() - i) keep track to the last element then and the second to the last.....
 			}
 			else				//if vector size is odd the middle element will be sent to the output
 			{
