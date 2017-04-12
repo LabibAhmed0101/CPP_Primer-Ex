@@ -30,7 +30,7 @@ int main()
 		}
 	}
 	
-	//sending the cluster to the standard output
+	//Sending the cluster to the standard output
 	cout << "\nThe grade clustering :" << endl;
 	for (vector<int>::const_iterator iter = clusterOfGrades.begin(); iter != clusterOfGrades.end(); ++iter)
 	{
