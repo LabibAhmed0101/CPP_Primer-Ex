@@ -12,7 +12,7 @@ int main()
 	int number;
 	
 	cout << "Enter a set of numbers" << endl;
-	while (cin >> number)		//Inserting number into the vector of number till the end of fine (ctrl z)
+	while (cin >> number)		//Inserting number into the vector of numbers till the end of file (ctrl z)
 	{
 		numbers.push_back(number);
 	}
