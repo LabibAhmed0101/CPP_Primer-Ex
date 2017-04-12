@@ -1,0 +1,16 @@
+Exercise 3.26: In the binary search program on page 112, why did we write mid = beg + (end - beg) / 2; 
+instead of mid = (beg + end)/2; ?
+
+mid = beg + (end - beg) /2
+is the right one to use becuase by using difference  between two iterators it gives us the distance between them.
+
+(end - beg)
+will have a result as an integer number and then will be divided by 2 , then the integer which will be evaluated
+will be added to beg.
+
+but
+mid = (beg + end) /2;
+its syntax is not right because iterator can't be added to another iterator.
+iterator of vectors and strings can be added to integers but not to another iterator.
+
+iterators can be subtracted to give a distance, but not added together.
