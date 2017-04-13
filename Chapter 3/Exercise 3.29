@@ -3,3 +3,5 @@ List some of the drawbacks of using an array instead of a vector.
 
 Arrays are not flexiable because they have a fixed size  and we cannot add elements to an array .
 You can not use arrays if you don't know exactly how many elements you need.
+
+unlike vectors arrays can't be assinged  or copied to another array.*/
