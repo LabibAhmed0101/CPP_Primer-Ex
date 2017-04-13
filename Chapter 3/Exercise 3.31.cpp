@@ -10,8 +10,8 @@ int main()
 {
 	int arr[10];				//Declaring an array of 10 ints
 
-	for (size_t i = 0; i < 10; ++i)		//Assinging array index values  to its element
-		arr[i] = i;
+	for (size_t i = 0; i < 10; ++i)
+		arr[i] = i;			//Assinging array index values  to its element
 	
 
 	for (size_t i = 0; i < 10; ++i)		//Sending the array to the std output.
@@ -20,3 +20,6 @@ int main()
 	cout << endl;
 	return 0;
 }
+
+//size_t makes sure that the counter is big enough to hold all array elements.
+//unsigned int could be used but its preferable to use size_t for counters.
