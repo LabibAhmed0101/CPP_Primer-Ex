@@ -1,7 +1,7 @@
 /*Exercise 3.36: 
 Write a program to compare two arrays for equality. Write a similar program to compare two vectors.*/
 
-//a)comparing two arrays for equality.
+//a)Comparing two arrays for equality.
 #include<iostream>
 
 using std::endl;
@@ -33,5 +33,26 @@ int main()
 	else						//Since the 2 arrays doesn't have the same size then they are not equal
 		cout << "The 2 arrays are not equal" << endl;
 
+	return 0;
+}
+
+//b)Coparing two vectors for equality.
+#include<iostream>
+#include<vector>
+
+using std::cout;
+using std::endl;
+using std::vector;
+
+int main()
+{
+	//Declaring 2  vectors of int
+	vector<int> v1{1,2,3,4,5,6,7,8,9,10};
+	vector<int> v2{1,2,3,4,5,6,7,8,9,10};
+
+	if (v1 == v2)		// == operator can be used with vectors to compare for equality
+		cout << "The 2 vectors are equal" << endl;
+	else
+		cout << "The 2 vectors are not equal" << endl;
 	return 0;
 }
