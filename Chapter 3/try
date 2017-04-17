@@ -1,0 +1,34 @@
+#include<iostream>
+#include<cstddef>
+
+using std::endl;
+using std::cout;
+
+int main()
+{
+	constexpr size_t sArr = 10;
+	constexpr size_t sArr2 = 10;
+
+	int arr[sArr] = {1,2,3,4,5,6,7,8,9,10};
+	int arr2[sArr2] = {1,2,3,4,5,6,7,8,9,10};
+
+	int arrLength = (sizeof(arr) / sizeof(int));
+	int arr2Length = (sizeof(arr2) / sizeof(int));
+
+	if (arrLength == arr2Length)
+	{
+		for (int i = 0; i < arrLength; ++i)
+		{
+			if (arr[i] != arr2[i])
+			{
+				cout << "The 2 arrays are not equal " << endl;
+				break;
+			}
+		}
+	}
+	else
+		cout << "The 2 arrays are not equal" << endl;
+
+	//cout << sizeof(arr)/sizeof(int) << endl;
+	return 0;
+}
