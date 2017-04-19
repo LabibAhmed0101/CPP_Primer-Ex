@@ -1,0 +1,27 @@
+Exercise 3.38: 
+In this section, we noted that it was not only illegal but
+meaningless to try to add two pointers. Why would adding two pointers be
+meaningless?
+
+its only logical to subtract 2 pointers and the result will be the differance between them " the offset in memory between two 
+pointers " we can also add or subtract integers to/from pointers and that will move the pointer up or down through the memory.
+
+22 london street is the building number 22 in london street.
+22 london street + 1 is the building number 23 in london street.
+22 london street - 1 is the building number 21 in london street.
+
+26 london street - 22 london street  will the 4 building between them
+
+However, if we add the 2 addresses its meaningless
+
+22 london street + 26 london street is meaningless
+
+Back to pointers:
+By adding two pointers the resulting pointer location will be 2 far and it might be resereved for another program,
+also it could overflow and the resulting pointer wouldn't be inside the memory range.
+
+22 london street + 26 london street 
+
+there would be no building 48 london street and the last building in london street is 32 london street.
+
+thats why adding two pointer is meaningless.
