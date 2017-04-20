@@ -24,4 +24,7 @@ int main()
 	return 0;
 }
 
-/*Some compiler will mention this error "The functions strcpy and strcat are considered unsafe. consider due to the fact that there is no bounds checking and can lead to buffer overflow.
+/*Some compiler will mention this error "The functions strcpy and strcat are considered unsafe. consider using strcpy_s and 
+strcat_s.
+Functions strcpy and strcat are considered unsafe due to the fact that there is no bounds checking and can lead to buffer overflow.
+by using strccpy_s or strcat_s will solve this issue because they are the safe version of strcpy and strcat.*/
