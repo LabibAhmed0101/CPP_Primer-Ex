@@ -3,21 +3,21 @@ Write a program to define two character arrays initialized from string literals.
 concatenation of the two arrays. Use strcpy and strcat to copy the two arrays into the third.*/
 
 #include<iostream>
-#include<cstring>
-#include<cstddef>	
+#include<cstring>				//Included to be able to use cstring functions
+#include<cstddef>				//included to be able to use size_t
 
 using std::cout;
 using std::endl;
 
 int main()
 {
-	char firstName[] = "Donald";
-	char lastName[] = "Trump";
-	constexpr size_t length = 50;
-	char fullName[length];
+	char firstName[] = "Donald";		//Declaring and intializing an array of characters firstName
+	char lastName[] = "Trump";		//Declaring and intializing an array of characters lastName
+	constexpr size_t length = 50;		//Defining the lenght for array of characters fullName
+	char fullName[length];			//Declaring without intializing an array of characters fullName
 
-	strcpy(fullName, firstName);
-	strcat(fullName, lastName);
+	strcpy(fullName, firstName);		//Copying firstName into fullName
+	strcat(fullName, lastName);		//Appends lastName to fullName
 
 	cout << fullName << endl;
 
