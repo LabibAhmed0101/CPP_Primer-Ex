@@ -17,6 +17,7 @@ int main()
 	char fullName[length];			//Declaring without intializing an array of characters fullName
 
 	strcpy(fullName, firstName);		//Copying firstName into fullName
+	strcat(fullName, " ");			//Appends space to fullName
 	strcat(fullName, lastName);		//Appends lastName to fullName
 
 	cout << fullName << endl;
