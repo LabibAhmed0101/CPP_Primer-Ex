@@ -30,9 +30,9 @@ int main()
 
 	//Using for with subscipt Operator
 	cout << "\n\nUsing for with subscript Operator" << endl;
-	for (int i = 0; i < row; ++i)				//Loop for each row
+	for (size_t i = 0; i < row; ++i)				//Loop for each row
 	{
-		for (int j = 0; j < coloumn; ++j)		//Loop through each coloum at the current row
+		for (size_t j = 0; j < coloumn; ++j)		//Loop through each coloum at the current row
 			cout << ia[i][j] << " ";
 		
 		cout << endl;					//New line after each row
