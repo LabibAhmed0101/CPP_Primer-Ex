@@ -7,6 +7,8 @@ the expression (without parentheses) and printing its result.
 
 ( ( 12 / 3 ) * 4 ) + ( 5 * 15 ) + ( ( 24 % 4 ) / 2 )
 
+The evaluation will be equal to 91 ;
+
 */
 #include<iostream>
 
@@ -20,3 +22,5 @@ int main()
 	return 0;
 
 }
+
+// x will be equal to 91 
