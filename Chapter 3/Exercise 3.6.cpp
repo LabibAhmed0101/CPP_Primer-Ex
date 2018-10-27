@@ -6,7 +6,9 @@ Use a range for to change all the characters in a string to X.
 #include<iostream>
 #include<string>
 
-using namespace std;
+using std::string;
+using std::cout;
+using std::endl;
 
 int main()
 {
