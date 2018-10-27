@@ -12,7 +12,7 @@ int main()
 {
 	string str("password");
 
-	for (char &c : str)
+	for (auto &c : str)
 	{
 		c = 'X';
 	}
