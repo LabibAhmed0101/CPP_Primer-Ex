@@ -53,3 +53,6 @@ int main()
 	return 0;
 }
 
+/*
+I do prefer ranged for because it's easier and less error might happen using it since we r not using subscript operators [] .
+*/
