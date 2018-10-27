@@ -5,6 +5,7 @@ you prefer and why?
 
 */
 
+//using while.
 #include<iostream>
 #include<string>
 
@@ -28,3 +29,27 @@ int main()
 
 	return 0;
 }
+
+//using for
+
+#include<iostream>
+#include<string>
+
+using std::string;
+using std::cout;
+using std::endl;
+
+int main()
+{
+	string str("password");
+
+	for (int i = 0; i < str.size(); ++i)
+	{
+		str[i] = 'X';
+	}
+
+	cout << "new str is " << str << endl;
+
+	return 0;
+}
+
