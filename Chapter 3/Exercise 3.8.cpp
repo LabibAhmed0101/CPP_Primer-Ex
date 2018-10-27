@@ -17,7 +17,7 @@ int main()
 {
 	string str("password");
 
-	int i = 0;
+	decltype(str.size()) i = 0;
 
 	while (i < str.size())
 	{
@@ -43,7 +43,7 @@ int main()
 {
 	string str("password");
 
-	for (int i = 0; i < str.size(); ++i)
+	for (decltype(str.size()) i = 0; i < str.size(); ++i)
 	{
 		str[i] = 'X';
 	}
