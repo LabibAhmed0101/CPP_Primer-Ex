@@ -1,0 +1,21 @@
+Exercise 3.11: 
+Is the following range for legal? If so, what is the type of c?
+
+const string s = "Keep out!";
+for (auto &c : s) { /* ... */ }
+
+Range for can be legal and illegal depends on what will be written inside it.
+It will be illegal incase the code inside the { } will change the value of  the string like :
+
+c = 'y' ;
+
+Since s is defined as a constant string so it can't be modified or changed.
+
+If the code won't change the value of the s so it will be legal to use it like :
+
+cout << c ;
+
+This code will write the value of c without changing its value. so its legal.
+
+
+Type of c here will be const char & .
