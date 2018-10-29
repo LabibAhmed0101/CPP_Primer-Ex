@@ -1,0 +1,14 @@
+Exercise 4.16: 
+Although the following are legal, they probably do not behave as the programmer 
+expects. Why? Rewrite the expressions as you think they should be.
+
+(a) if (p = getPtr() != 0)
+assigenment operator (=) got low precedence so getPtr() != 0 will be evaluated 1st
+which is not intended to fix it it should be like
+if ((p = getPtr()) != 0)
+
+(b) if (i = 1024)
+this if condition will be always true cuz wer are assigning (not comparing) 1024 to i which is a none-zero value
+to fix it it should be :
+if(i == 1024)
+this condition will be only true of i = 1024
