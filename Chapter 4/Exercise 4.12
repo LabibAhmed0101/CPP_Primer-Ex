@@ -1,0 +1,27 @@
+Exercise 4.12: 
+Assuming i, j, and k are all ints, explain what i != j < k means.
+
+since < got precedence on != so j < k will be evaluted 1st.
+
+i != (j < k)
+
+if j < k is true 
+
+then if i not equal to 1 (true) the whole expression will be true
+
+if j < k is false
+
+then if i not equal to 0 (false) the whole expression will be true
+
+
+in that expression i != j < k 
+
+tho i, j and k are integers but that expression only compared j and k as integers
+then generated a bool value for them either true (1) or false (0).
+
+then i will be compared to 
+if j < k is true means i != true (1) 
+if j < k is false means i != false (0)
+
+It is usually a bad idea to use the boolean literals true and false as operands in a comparison. 
+These literals should be used only to compare to an object of type bool.
