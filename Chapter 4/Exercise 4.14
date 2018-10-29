@@ -1,0 +1,10 @@
+Exercise 4.14: 
+Explain what happens in each of the if tests:
+
+if (42 = i) // ...
+illegal , because we can't use integral literals as lvalue it only can be used as rvalue.
+
+if (i = 42) // ...
+since condition assign 42 to i , then i have a nonzero value then the condition will
+be evaluated as true .
+
