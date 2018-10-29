@@ -1,0 +1,16 @@
+Exercise 4.17: 
+Explain the difference between prefix and postfix increment.
+
+int a = 0;
+int b ;
+
+b = ++a;		//prefix
+in the case of prefix the value of a and b will be :
+a = 1 , b = 1
+The prefix operators return the object itself as an lvalue.
+
+b = a++;		//postfix
+in the case of Postfix the value of a and b will be :
+a = 1 , b = 0
+cuz postfix will keep a copy of a (0) to assign to b then increase a by 1
+The postfix operators return a copy of the object’s original value as an rvalue.
