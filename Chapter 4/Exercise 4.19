@@ -1,0 +1,19 @@
+Exercise 4.19: 
+Given that ptr points to an int, that vec is a vector<int>, and that ival 
+is an int, explain the behavior of each of these expressions. Which, if 
+any, are likely to be incorrect? Why? How might each be corrected?
+
+(a) ptr != 0 && *ptr++
+if ptr is not null pointer and the derefrenced value of ptr is nonzero then
+this expression is evaluated as true.
+
+Although in the past expression ptr is used twice in the same expression but
+the logical AND (&&) operator guarantee that its left-hand operand is evaluated 
+first. Moreover, we are also guaranteed that the right-hand operand is evaluated 
+only if the left-hand operand is true.
+
+(b) ival++ && ival
+checks if ival have nonzero value if true  then check ival+1 have nonezero value
+
+(c) vec[ival++] <= vec[ival]
+The order of evaluation of <= operator's operands is undefined.
