@@ -16,4 +16,16 @@ only if the left-hand operand is true.
 checks if ival have nonzero value if true  then check ival+1 have nonezero value
 
 (c) vec[ival++] <= vec[ival]
-The order of evaluation of <= operator's operands is undefined.
+The problem is that  both the left and right-hand operands to <= use ival and 
+the left-hand operand changes ival so it is undefined behavior becuaese we 
+have an unsequenced modification and access of a memory location
+
+https://stackoverflow.com/questions/53065744/c11-order-of-evaluation-undefined-behavior
+
+the right way to do it would be like
+
+if(vec[ival] <= vec[ival + 1])			// used ival without changeing its value
+{
+//code
+ival++ ;					//increament of ival by 1
+}
