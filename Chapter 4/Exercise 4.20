@@ -1,0 +1,23 @@
+Exercise 4.20: 
+Assuming that iter is a vector<string>::iterator, indicate which, if any, 
+of the following expressions are legal. Explain the behavior of the legal 
+expressions and why those that aren’t legal are in error.
+
+(a) *iter++;
+(b) (*iter)++;
+(c) *iter.empty()
+(d) iter->empty();
+(e) ++*iter;
+(f) iter++->empty();
+
+(a) *iter++; 		//legal 	: derefrencing iter  then increment iter by 1
+
+(b) (*iter)++;		//illegal 	: derefrencing iter then increment its content by 1 which can't be applied to strings
+
+(c) *iter.empty()	//illegal	: . is used with objects , with pointers/iterators we use this -> to access the mem of the object.
+
+(d) iter->empty();	//legal		: checking if the string the iter points to  is empty or not .
+
+(e) ++*iter;		//illegal	: no increment (++) can be applied to string , it would be legal if iter vector<int>::iterator
+
+(f) iter++->empty();	//legal		: return if the string which iter points at is empty , then ++ iter
