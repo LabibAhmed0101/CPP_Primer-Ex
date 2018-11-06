@@ -31,3 +31,42 @@ int main()
 	return 0;
 }
 
+					================================================
+						
+// Using if statements
+
+#include<iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+
+int main()
+{
+	int grade = 0;
+	cout << "Please enter ur current grade : ";
+	cin >> grade;
+
+	if (grade > 90)
+	{
+		cout << "\nYou got a : High Pass " << endl;
+	}
+	else if (grade > 75)
+	{
+		cout << "\nYou got a : Pass " << endl;
+	}
+	else if (grade > 60)
+	{
+		cout << "\nYou got a : Low Pass" << endl;
+	}
+	else
+	{
+		cout << "\nYou got a : Fail" << endl;
+	}
+
+	return 0;
+}
+
+//if is easier to understand , because "Nested conditionals quickly become unreadable. 
+//It’s a good idea to nest no more than two or three.
