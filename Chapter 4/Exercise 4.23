@@ -1,0 +1,15 @@
+Exercise 4.23: 
+The following expression fails to compile due to operator
+precedence. Using Table 4.12 (p. 166), explain why it fails. How would you
+fix it?
+
+string s = "word";
+string pl = s + s[s.size() - 1] == 's' ? "" : "s" ;
+
+it fails because add operator (+) got higher precedence than conditional operator (?:)
+to fix it the conditional should be parenthesized :
+
+string pl = s + ( s[s.size() - 1] == 's' ? "" : "s" ) ;
+
+parentheses guarantee the conditional expression will be evaluted 1st then will be added to s .
+
