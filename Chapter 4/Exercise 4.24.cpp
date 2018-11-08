@@ -76,7 +76,11 @@ the next program shows the difference in output between left/right grouping with
 #include<iostream>
 #include<string>
 
-using namespace std;
+using std::string;
+using std::cout;
+using std::cin;
+using std::endl;
+
 
 int main()
 {
@@ -90,11 +94,13 @@ int main()
 
 	//operands grouped from right to left
 
-	finalGradeRightAssociative = (grade > 90) ? "high pass" : ((grade < 60) ? "fail" : "pass");
+	finalGradeRightAssociative = (grade > 90) ? "high pass"
+	: ((grade < 60) ? "fail" : "pass");
 
 	//operands grouped from left to right
 
-	finalGradeLeftAssociative = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
+	finalGradeLeftAssociative = ((grade > 90) ? "high pass"
+		: (grade < 60)) ? "fail" : "pass";
 
 	
 
