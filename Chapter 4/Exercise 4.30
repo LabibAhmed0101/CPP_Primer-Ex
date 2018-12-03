@@ -1,0 +1,18 @@
+Exercise 4.30: 
+Using Table 4.12 (p. 166), parenthesize the following expressions to match the 
+default evaluation:
+
+(a) sizeof x + y
+(sizeof(x)) + y		//sizeof operator got a higher precedence than the binary +
+
+(b) sizeof p->mem[i]
+sizeof (p->mem[i])	//member selector(->) got higher precedence than size of operator
+
+
+(c) sizeof a < b
+(sizeof(a)) < b		//sizeof operator got higher precedence than the less than operator (<) 
+
+(d) sizeof f()
+sizeof(f())		//function call operator( () ) got higher precedence than sizeof operator
+			//and it will return the size of the type returned from the function call
+			//unless the function return type is void (returns nothing)
