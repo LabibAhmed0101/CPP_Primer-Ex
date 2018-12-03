@@ -1,0 +1,11 @@
+Exercise 4.32: Explain the following loop.
+
+constexpr int size = 5;
+int ia[size] = {1,2,3,4,5};			//ia is an array of integers that have 5 elements            
+
+for (int *ptr = ia, ix = 0;			//intializing a pointer to int (ptr) which points to the 1st element in ia
+						//also intializing an int index (ix) which equal to 0
+						
+ix != size && ptr != ia+size;			//if ix < 5 and ptr not equal to 1 past the last element of the array
+++ix, ++ptr)					//ix value increase by 1 , and ptr points to the next element in the array 
+{ /* ... */ }					//loop body which will be repeated as long as the condition is true
