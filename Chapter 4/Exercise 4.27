@@ -1,0 +1,20 @@
+Exercise 4.27: 
+What is the result of each of these expressions? unsigned long ul1 = 3, ul2 = 7;
+
+ul1 = 00000000 00000000 00000000 00000011
+
+ul2 = 00000000 00000000 00000000 00000111
+
+
+(a) ul1 & ul2
+00000000 00000000 00000000 00000011
+
+(b) ul1 | ul2
+00000000 00000000 00000000 00000111
+
+(c) ul1 && ul2
+both of ul1 and ul2 are none-zero values so that logical condition will be evaluated as
+true
+
+(d) ul1 || ul2
+true
