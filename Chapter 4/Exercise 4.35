@@ -1,0 +1,39 @@
+Exercise 4.35: 
+Given the following definitions, 
+
+char cval; int ival; unsigned int ui;
+float fval; double dval;
+
+identify the implicit type conversions, if any, taking place:
+
+(a) cval = 'a' + 3;
+ a will be promoted to int then add 3 to it then convert that int value to char
+
+(b) fval = ui - ival * 1.0;
+
+note:
+The default type for floating-point literals is double. Floating-point literals of type float or 
+long double can be specified by adding one of the following suffixes:
+
+Suffix	Type
+f or F	float
+l or L	long double
+
+For example:
+3.14159	   // double
+3.14159L   // long double
+6.02e23f   // float  
+
+1st ival will be converted to double type then multiply it by 1.0
+then ui will be converted to double and subtract the result of ival * 1.0 from it
+then the final result will be converted to float by truncation and assigened to fval
+
+(c) dval = ui * fval;
+1st ui will be converted to float type then multiplyed by fval and the result
+will be converted to double type and assigened to dval
+
+
+(d) cval = ival + fval + dval;
+ival will be converted to float type then added to fval and the result will be converted
+to double type then added to dval then the result will be converted to char type then 
+assigned to cval
