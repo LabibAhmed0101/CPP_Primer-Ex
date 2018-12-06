@@ -1,0 +1,15 @@
+Exercise 4.34: 
+Given the variable definitions in this section, explain what conversions take place in 
+the following expressions:
+
+(a) if (fval)
+fval will be converted to bool , and if fval is a none-zero value the condition
+will be true , and if fval value is 0 the condition will be false
+
+(b) dval = fval + ival;
+1st ival will be converted to float type then added to fval.
+then the result of the sum will be converted from float type to double type
+
+(c) dval + ival * cval;
+1st cval will be promoted to int  then multiply it by ival
+then the result of ival * cval will beconverted to double and finally added to dval
